@@ -21,10 +21,10 @@ tate = 0
 ten = 0
 for y in range(N):
     for x in range(M):
-        # 線対象ならば(横)
+        # 線対称ならば(横)
         if field[y][x] == "#" and field[y][M - x - 1] == "#":
             yoko += 1
-        # 線対象ならば(縦)
+        # 線対称ならば(縦)
         if field[y][x] == "#" and field[N - y - 1][x] == "#":
             tate += 1
         # 点対称ならば
